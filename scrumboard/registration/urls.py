@@ -1,9 +1,9 @@
-from django.urls import path
 from .views import *
-from django.urls import path, include
+from django.urls import path
 
 urlpatterns = [
-    path('', reg),
-    #path('registration/', reg),
+    path('', index),
+    path('registration/', reg),
+    path('auth/', auth),
 
 ]
